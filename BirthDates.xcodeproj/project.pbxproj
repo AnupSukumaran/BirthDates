@@ -124,11 +124,11 @@
 				C59FD5952846087B00DD72AE /* APICalls&GraphQLFiles */,
 				C59FD5992846098700DD72AE /* Model */,
 				C59FD5872846050E00DD72AE /* View */,
+				C59FD59E28460DCE00DD72AE /* ViewModel */,
 				C59FD5582845FEED00DD72AE /* Main.storyboard */,
 				C59FD55B2845FEF400DD72AE /* Assets.xcassets */,
 				C59FD55D2845FEF400DD72AE /* LaunchScreen.storyboard */,
 				C59FD5602845FEF400DD72AE /* Info.plist */,
-				C59FD59C28460D0800DD72AE /* HomeViewModel.swift */,
 			);
 			path = BirthDates;
 			sourceTree = "<group>";
@@ -191,6 +191,14 @@
 				C59FD5972846097C00DD72AE /* API.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		C59FD59E28460DCE00DD72AE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C59FD59C28460D0800DD72AE /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

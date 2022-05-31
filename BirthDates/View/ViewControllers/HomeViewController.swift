@@ -12,6 +12,11 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var bdayListView: UITableView!
     @IBOutlet weak var activityIndic: UIActivityIndicatorView!
     
+    var viewModel: HomeViewModel? {
+        didSet {
+            setHandlers()
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,3 +26,18 @@ class HomeViewController: UIViewController {
 
 }
 
+extension HomeViewController {
+    
+    func setHandlers() {
+        
+        viewModel?.tableReloadHandler = { [weak self] in
+            guard let vc = self else {return}
+            vc.bdayListView.reloadData()
+        }
+        
+        viewModel?.errorHandler = { [weak self] errStr in
+//            guard let vc = self else {return}
+        }
+    }
+    
+}
