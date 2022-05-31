@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SASCustomAlert
 
 class HomeViewController: UIViewController {
     
@@ -42,6 +43,7 @@ extension HomeViewController {
         viewModel?.errorHandler = { [weak self] errStr in
             guard let vc = self else {return}
             vc.activityStartAction(false)
+            UIAlertController.showAlert(title: .alertMainTitle, message: .alertSubTitle, buttonTitle:"OK", selfClass: vc)
         }
         
         viewModel?.didSelectRowAtIndex = { [weak self] personData in

@@ -30,6 +30,7 @@
 		C59FD5A52846165E00DD72AE /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59FD5A42846165E00DD72AE /* UIViewController+Ext.swift */; };
 		C59FD5A7284616F600DD72AE /* PersonDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59FD5A6284616F600DD72AE /* PersonDetailViewModel.swift */; };
 		C59FD5A928461ABE00DD72AE /* NetworkAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59FD5A828461ABE00DD72AE /* NetworkAPITests.swift */; };
+		C59FD5AC2846215800DD72AE /* SASCustomAlert in Frameworks */ = {isa = PBXBuildFile; productRef = C59FD5AB2846215800DD72AE /* SASCustomAlert */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C59FD5AC2846215800DD72AE /* SASCustomAlert in Frameworks */,
 				C59FD58C2846062700DD72AE /* Apollo in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -243,6 +245,7 @@
 			name = BirthDates;
 			packageProductDependencies = (
 				C59FD58B2846062700DD72AE /* Apollo */,
+				C59FD5AB2846215800DD72AE /* SASCustomAlert */,
 			);
 			productName = BirthDates;
 			productReference = C59FD54F2845FEED00DD72AE /* BirthDates.app */;
@@ -318,6 +321,7 @@
 			mainGroup = C59FD5462845FEED00DD72AE;
 			packageReferences = (
 				C59FD58A2846062700DD72AE /* XCRemoteSwiftPackageReference "apollo-ios" */,
+				C59FD5AA2846215800DD72AE /* XCRemoteSwiftPackageReference "SASCustomAlert" */,
 			);
 			productRefGroup = C59FD5502845FEED00DD72AE /* Products */;
 			projectDirPath = "";
@@ -750,6 +754,14 @@
 				kind = branch;
 			};
 		};
+		C59FD5AA2846215800DD72AE /* XCRemoteSwiftPackageReference "SASCustomAlert" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AnupSukumaran/SASCustomAlert.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -757,6 +769,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = C59FD58A2846062700DD72AE /* XCRemoteSwiftPackageReference "apollo-ios" */;
 			productName = Apollo;
+		};
+		C59FD5AB2846215800DD72AE /* SASCustomAlert */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C59FD5AA2846215800DD72AE /* XCRemoteSwiftPackageReference "SASCustomAlert" */;
+			productName = SASCustomAlert;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

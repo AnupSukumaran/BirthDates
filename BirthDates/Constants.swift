@@ -11,4 +11,6 @@ extension String {
     static var homeTableViewCell = "HomeTableViewCell"
     static var personDetailViewController = "PersonDetailViewController"
     static var mainUrlString = "https://birthday-api.hasura.app/v1/graphql"
+    static var alertMainTitle = "Message"
+    static var alertSubTitle = "Something went wrong!. Please try again."
 }
