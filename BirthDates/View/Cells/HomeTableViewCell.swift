@@ -18,6 +18,12 @@ class HomeTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
+    
+    func config(person: BirthdaysQuery.Data.Person){
+        lbFirstLetter.text = person.name.getInitials()
+        lbNames.text = person.name
+        lbDOB.text = person.dateOfBirth.convertDateFormate()
+    }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)

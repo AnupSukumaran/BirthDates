@@ -40,6 +40,7 @@ extension HomeViewModel: UITableViewDataSource, UITableViewDelegate {
             as? HomeTableViewCell else {
             fatalError("HomeTableViewCell missing!!")
         }
+        cell.config(person: personsArr[indexPath.row])
         return cell
     }
 }
