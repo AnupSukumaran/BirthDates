@@ -16,6 +16,12 @@ Clone the repo using the "git clone https://github.com/AnupSukumaran/BirthDates.
 - Impoved the UI a Bit more. 
 - Added network connection checker
 
-## Your contact details and any public profiles on developer networks like GitHub, BitBucket, Stack Overflow, etc.
+## Contact details and public profiles.
 
+Contact details:
+
+Flat 1, 6A Gwennyth House, Gwennyth Street, Cardiff, CF24 4PH
+M +44 7922926184
+Email: anup.sukumaran9@gmail.com anup.sukumaran@icloud.com
+LinkedIn: https://www.linkedin.com/in/ sukumar-anup- sukumaran-8a292b97/
 GitHub - https://www.linkedin.com/in/sukumar-anup-sukumaran-8a292b97/
