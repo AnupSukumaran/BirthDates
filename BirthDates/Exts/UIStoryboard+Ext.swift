@@ -9,13 +9,13 @@ import Foundation
 import UIKit
 
 extension UIStoryboard {
-  
     static func mainStoryboard() -> UIStoryboard {
         return UIStoryboard(name: "Main", bundle: Bundle.main)
     }
 
     static func personDetailViewController() -> PersonDetailViewController? {
-        return mainStoryboard().instantiateViewController(withIdentifier: .personDetailViewController) as? PersonDetailViewController
+        return mainStoryboard()
+                .instantiateViewController(
+                    withIdentifier: .personDetailViewController ) as? PersonDetailViewController
     }
-    
 }

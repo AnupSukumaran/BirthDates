@@ -28,8 +28,7 @@ public final class BirthdaysQuery: GraphQLQuery {
 
     public static var selections: [GraphQLSelection] {
       return [
-        GraphQLField("person", type: .nonNull(.list(.nonNull(.object(Person.selections))))),
-      ]
+        GraphQLField("person", type: .nonNull(.list(.nonNull(.object(Person.selections)))))]
     }
 
     public private(set) var resultMap: ResultMap
@@ -39,13 +38,15 @@ public final class BirthdaysQuery: GraphQLQuery {
     }
 
     public init(person: [Person]) {
-      self.init(unsafeResultMap: ["__typename": "query_root", "person": person.map { (value: Person) -> ResultMap in value.resultMap }])
+      self.init(unsafeResultMap: ["__typename": "query_root",
+                                  "person": person.map {(value: Person) -> ResultMap in value.resultMap }])
     }
 
     /// fetch data from the table: "person"
     public var person: [Person] {
       get {
-        return (resultMap["person"] as! [ResultMap]).map { (value: ResultMap) -> Person in Person(unsafeResultMap: value) }
+        return (resultMap["person"] as? [ResultMap] ?? [])
+              .map { (value: ResultMap) -> Person in Person(unsafeResultMap: value) }
       }
       set {
         resultMap.updateValue(newValue.map { (value: Person) -> ResultMap in value.resultMap }, forKey: "person")
@@ -60,8 +61,7 @@ public final class BirthdaysQuery: GraphQLQuery {
           GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
           GraphQLField("id", type: .nonNull(.scalar(String.self))),
           GraphQLField("name", type: .nonNull(.scalar(String.self))),
-          GraphQLField("date_of_birth", type: .nonNull(.scalar(String.self))),
-        ]
+          GraphQLField("date_of_birth", type: .nonNull(.scalar(String.self)))]
       }
 
       public private(set) var resultMap: ResultMap
@@ -74,9 +74,9 @@ public final class BirthdaysQuery: GraphQLQuery {
         self.init(unsafeResultMap: ["__typename": "person", "id": id, "name": name, "date_of_birth": dateOfBirth])
       }
 
-      public var __typename: String {
+      public var typename: String {
         get {
-          return resultMap["__typename"]! as! String
+          return resultMap["__typename"] as? String ?? ""
         }
         set {
           resultMap.updateValue(newValue, forKey: "__typename")
@@ -85,7 +85,7 @@ public final class BirthdaysQuery: GraphQLQuery {
 
       public var id: String {
         get {
-          return resultMap["id"]! as! String
+          return resultMap["id"] as? String ?? ""
         }
         set {
           resultMap.updateValue(newValue, forKey: "id")
@@ -94,7 +94,7 @@ public final class BirthdaysQuery: GraphQLQuery {
 
       public var name: String {
         get {
-          return resultMap["name"]! as! String
+          return resultMap["name"] as? String ?? ""
         }
         set {
           resultMap.updateValue(newValue, forKey: "name")
@@ -103,7 +103,7 @@ public final class BirthdaysQuery: GraphQLQuery {
 
       public var dateOfBirth: String {
         get {
-          return resultMap["date_of_birth"]! as! String
+          return resultMap["date_of_birth"] as? String ?? ""
         }
         set {
           resultMap.updateValue(newValue, forKey: "date_of_birth")

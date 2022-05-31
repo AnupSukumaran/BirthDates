@@ -9,11 +9,9 @@ import Foundation
 import UIKit
 
 extension String {
-    
     func getInitials() -> Self {
         return self.components(separatedBy: " ").reduce("") { ($0 == "" ? "" : "\($0.first!)") + "\($1.first!)" }
     }
-    
     func convertDateFormate(from: String = "yyyy-MM-dd", toFormate: String = "dd-MM-yyyy") -> String {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = from
@@ -22,7 +20,6 @@ extension String {
         return  dateFormatter.string(from: date!)
 
     }
-    
     func ageValue(from: String = "yyyy-MM-dd") -> String {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = from
@@ -36,5 +33,4 @@ extension String {
         return "\(diffInDays) year(s) old"
     }
 
-    
 }

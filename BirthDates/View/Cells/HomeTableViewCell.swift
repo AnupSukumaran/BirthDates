@@ -8,7 +8,6 @@
 import UIKit
 
 class HomeTableViewCell: UITableViewCell {
-    
     @IBOutlet weak var profileView: UIView!
     @IBOutlet weak var lbFirstLetter: UILabel!
     @IBOutlet weak var lbNames: UILabel!
@@ -18,8 +17,7 @@ class HomeTableViewCell: UITableViewCell {
         super.awakeFromNib()
         profileView.layer.cornerRadius = 27.5
     }
-    
-    func config(person: BirthdaysQuery.Data.Person){
+    func config(person: BirthdaysQuery.Data.Person) {
         lbFirstLetter.text = person.name.getInitials()
         lbNames.text = person.name
         lbDOB.text = person.dateOfBirth.convertDateFormate()

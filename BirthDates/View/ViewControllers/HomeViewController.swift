@@ -12,7 +12,6 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var bdayListView: UITableView!
     @IBOutlet weak var activityIndic: UIActivityIndicatorView!
-    
     var viewModel: HomeViewModel? {
         didSet {
             setHandlers()
@@ -26,43 +25,32 @@ class HomeViewController: UIViewController {
         activityStartAction(true)
         viewModel?.callBirthdaysAPI()
     }
-
-
 }
 
 extension HomeViewController {
-    
     func setHandlers() {
-        
         viewModel?.tableReloadHandler = { [weak self] in
-            guard let vc = self else {return}
-            vc.activityStartAction(false)
-            vc.bdayListView.reloadData()
+            guard let cntr = self else {return}
+            cntr.activityStartAction(false)
+            cntr.bdayListView.reloadData()
         }
-        
         viewModel?.errorHandler = { [weak self] errStr in
-            guard let vc = self else {return}
-            vc.activityStartAction(false)
-            UIAlertController.showAlert(title: .alertMainTitle, message: .alertSubTitle, buttonTitle:"OK", selfClass: vc)
+            guard let cntr = self else {return}
+            cntr.activityStartAction(false)
+            UIAlertController.showAlert(title: .alertMainTitle, message: errStr, buttonTitle: "OK", selfClass: cntr)
         }
-        
         viewModel?.didSelectRowAtIndex = { [weak self] personData in
-            guard let vc = self else {return}
-            vc.showPersonDetailViewController(personDetail: personData)
+            guard let cntr = self else {return}
+            cntr.showPersonDetailViewController(personDetail: personData)
         }
-        
     }
-    
     func activityStartAction(_ begin: Bool) {
         self.view.isUserInteractionEnabled = !begin
         self.view.alpha = begin ? 0.5 : 1
-        
         guard begin else {
             activityIndic.stopAnimating()
             return
-            
         }
         activityIndic.startAnimating()
     }
-    
 }

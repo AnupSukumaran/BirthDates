@@ -16,12 +16,10 @@ enum Results<T> {
 class NetworkLib {
     static let shared = NetworkLib()
     var apollo: ApolloClient?
-    
     init() {
         guard let url = URL(string: .mainUrlString) else {return}
         apollo = ApolloClient(url: url)
     }
-    
     func callBirthdaysAPI(comp: @escaping (Results<[BirthdaysQuery.Data.Person]>) -> Void) {
         apollo?.fetch(query: BirthdaysQuery()) { result in
             switch result {

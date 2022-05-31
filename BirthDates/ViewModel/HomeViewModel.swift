@@ -31,11 +31,9 @@ extension HomeViewModel {
 }
 
 extension HomeViewModel: UITableViewDataSource, UITableViewDelegate {
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return personsArr.count
     }
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(
             withIdentifier: .homeTableViewCell,
@@ -46,7 +44,6 @@ extension HomeViewModel: UITableViewDataSource, UITableViewDelegate {
         cell.config(person: personsArr[indexPath.row])
         return cell
     }
-    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         didSelectRowAtIndex?(personsArr[indexPath.row])
     }

@@ -9,7 +9,6 @@ import XCTest
 @testable import BirthDates
 
 class BirthDatesTests: XCTestCase {
-    
     override func setUpWithError() throws {
     }
 
@@ -35,6 +34,4 @@ class BirthDatesTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
-
-
 }
