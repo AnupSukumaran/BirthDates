@@ -16,6 +16,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let navVC = window?.rootViewController as? UINavigationController else {return}
         guard let vc = navVC.topViewController as? HomeViewController else {return}
         vc.viewModel = HomeViewModel()
+        
         guard let _ = (scene as? UIWindowScene) else { return }
     }
 
