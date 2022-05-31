@@ -18,6 +18,7 @@
 		C59FD5762845FEF500DD72AE /* BirthDatesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59FD5752845FEF500DD72AE /* BirthDatesUITestsLaunchTests.swift */; };
 		C59FD583284602F900DD72AE /* PersonDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59FD582284602F900DD72AE /* PersonDetailViewController.swift */; };
 		C59FD5852846036B00DD72AE /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59FD5842846036B00DD72AE /* HomeTableViewCell.swift */; };
+		C59FD58C2846062700DD72AE /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = C59FD58B2846062700DD72AE /* Apollo */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C59FD58C2846062700DD72AE /* Apollo in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,6 +175,9 @@
 			dependencies = (
 			);
 			name = BirthDates;
+			packageProductDependencies = (
+				C59FD58B2846062700DD72AE /* Apollo */,
+			);
 			productName = BirthDates;
 			productReference = C59FD54F2845FEED00DD72AE /* BirthDates.app */;
 			productType = "com.apple.product-type.application";
@@ -245,6 +250,9 @@
 				Base,
 			);
 			mainGroup = C59FD5462845FEED00DD72AE;
+			packageReferences = (
+				C59FD58A2846062700DD72AE /* XCRemoteSwiftPackageReference "apollo-ios" */,
+			);
 			productRefGroup = C59FD5502845FEED00DD72AE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -634,6 +642,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C59FD58A2846062700DD72AE /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C59FD58B2846062700DD72AE /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C59FD58A2846062700DD72AE /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C59FD5472845FEED00DD72AE /* Project object */;
 }
