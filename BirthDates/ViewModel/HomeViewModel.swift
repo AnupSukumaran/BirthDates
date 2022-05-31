@@ -28,3 +28,18 @@ extension HomeViewModel {
         }
     }
 }
+
+extension HomeViewModel: UITableViewDataSource, UITableViewDelegate {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return personsArr.count
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(
+            withIdentifier: .homeTableViewCell,
+            for: indexPath)
+            as? HomeTableViewCell else {
+            fatalError("HomeTableViewCell missing!!")
+        }
+        return cell
+    }
+}
