@@ -29,6 +29,7 @@ extension PersonDetailViewController {
     func setCurves() {
         goBackBtn.layer.cornerRadius = 12
         initialsView.layer.cornerRadius = 64
+        goBackBtn.titleLabel?.font = UIFont(name: "Helvetica-Bold", size: 16)
     }
     func setValues() {
         lbInitials.text = viewModel?.personDetail?.name.getInitials()
