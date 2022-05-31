@@ -16,6 +16,7 @@
 		C59FD56A2845FEF500DD72AE /* BirthDatesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59FD5692845FEF500DD72AE /* BirthDatesTests.swift */; };
 		C59FD5742845FEF500DD72AE /* BirthDatesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59FD5732845FEF500DD72AE /* BirthDatesUITests.swift */; };
 		C59FD5762845FEF500DD72AE /* BirthDatesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59FD5752845FEF500DD72AE /* BirthDatesUITestsLaunchTests.swift */; };
+		C59FD583284602F900DD72AE /* PersonDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59FD582284602F900DD72AE /* PersonDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		C59FD56F2845FEF500DD72AE /* BirthDatesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BirthDatesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C59FD5732845FEF500DD72AE /* BirthDatesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthDatesUITests.swift; sourceTree = "<group>"; };
 		C59FD5752845FEF500DD72AE /* BirthDatesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthDatesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C59FD582284602F900DD72AE /* PersonDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				C59FD5522845FEED00DD72AE /* AppDelegate.swift */,
 				C59FD5542845FEED00DD72AE /* SceneDelegate.swift */,
 				C59FD5562845FEED00DD72AE /* HomeViewController.swift */,
+				C59FD582284602F900DD72AE /* PersonDetailViewController.swift */,
 				C59FD5582845FEED00DD72AE /* Main.storyboard */,
 				C59FD55B2845FEF400DD72AE /* Assets.xcassets */,
 				C59FD55D2845FEF400DD72AE /* LaunchScreen.storyboard */,
@@ -258,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C59FD583284602F900DD72AE /* PersonDetailViewController.swift in Sources */,
 				C59FD5572845FEED00DD72AE /* HomeViewController.swift in Sources */,
 				C59FD5532845FEED00DD72AE /* AppDelegate.swift in Sources */,
 				C59FD5552845FEED00DD72AE /* SceneDelegate.swift in Sources */,
