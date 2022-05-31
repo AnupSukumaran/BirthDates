@@ -43,6 +43,10 @@ extension HomeViewController {
             guard let vc = self else {return}
             vc.activityStartAction(false)
         }
+        
+        viewModel?.didSelectRowAtIndex = { personData in
+
+        }
     }
     
     func activityStartAction(_ begin: Bool) {

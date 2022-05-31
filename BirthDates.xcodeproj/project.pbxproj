@@ -128,7 +128,6 @@
 				C59FD5992846098700DD72AE /* Model */,
 				C59FD5872846050E00DD72AE /* View */,
 				C59FD59E28460DCE00DD72AE /* ViewModel */,
-				C59FD5582845FEED00DD72AE /* Main.storyboard */,
 				C59FD55B2845FEF400DD72AE /* Assets.xcassets */,
 				C59FD55D2845FEF400DD72AE /* LaunchScreen.storyboard */,
 				C59FD5602845FEF400DD72AE /* Info.plist */,
@@ -156,6 +155,7 @@
 		C59FD5872846050E00DD72AE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C59FD5582845FEED00DD72AE /* Main.storyboard */,
 				C59FD5882846053400DD72AE /* ViewControllers */,
 				C59FD5892846053F00DD72AE /* Cells */,
 			);

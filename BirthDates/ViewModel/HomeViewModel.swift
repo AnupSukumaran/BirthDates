@@ -11,6 +11,7 @@ class HomeViewModel: NSObject {
     var personsArr = [BirthdaysQuery.Data.Person]()
     var tableReloadHandler: (() -> Void)?
     var errorHandler: ((String) -> Void)?
+    var didSelectRowAtIndex: ((BirthdaysQuery.Data.Person) -> Void)?
 }
 
 extension HomeViewModel {
@@ -30,9 +31,11 @@ extension HomeViewModel {
 }
 
 extension HomeViewModel: UITableViewDataSource, UITableViewDelegate {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return personsArr.count
     }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(
             withIdentifier: .homeTableViewCell,
@@ -42,5 +45,9 @@ extension HomeViewModel: UITableViewDataSource, UITableViewDelegate {
         }
         cell.config(person: personsArr[indexPath.row])
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        didSelectRowAtIndex?(personsArr[indexPath.row])
     }
 }
