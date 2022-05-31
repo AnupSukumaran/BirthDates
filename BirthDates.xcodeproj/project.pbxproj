@@ -19,6 +19,7 @@
 		C59FD583284602F900DD72AE /* PersonDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59FD582284602F900DD72AE /* PersonDetailViewController.swift */; };
 		C59FD5852846036B00DD72AE /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59FD5842846036B00DD72AE /* HomeTableViewCell.swift */; };
 		C59FD58C2846062700DD72AE /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = C59FD58B2846062700DD72AE /* Apollo */; };
+		C59FD590284607C600DD72AE /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = C59FD58F284607C600DD72AE /* schema.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		C59FD5752845FEF500DD72AE /* BirthDatesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthDatesUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C59FD582284602F900DD72AE /* PersonDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailViewController.swift; sourceTree = "<group>"; };
 		C59FD5842846036B00DD72AE /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		C59FD58F284607C600DD72AE /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 			children = (
 				C59FD5522845FEED00DD72AE /* AppDelegate.swift */,
 				C59FD5542845FEED00DD72AE /* SceneDelegate.swift */,
+				C59FD58F284607C600DD72AE /* schema.json */,
 				C59FD5872846050E00DD72AE /* View */,
 				C59FD5582845FEED00DD72AE /* Main.storyboard */,
 				C59FD55B2845FEF400DD72AE /* Assets.xcassets */,
@@ -269,6 +272,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C59FD590284607C600DD72AE /* schema.json in Resources */,
 				C59FD55F2845FEF400DD72AE /* LaunchScreen.storyboard in Resources */,
 				C59FD55C2845FEF400DD72AE /* Assets.xcassets in Resources */,
 				C59FD55A2845FEED00DD72AE /* Main.storyboard in Resources */,
