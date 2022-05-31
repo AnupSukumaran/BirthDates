@@ -8,6 +8,10 @@
 import UIKit
 
 class HomeViewController: UIViewController {
+    
+    @IBOutlet weak var bdayListView: UITableView!
+    @IBOutlet weak var activityIndic: UIActivityIndicatorView!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()

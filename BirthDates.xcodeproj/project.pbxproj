@@ -105,9 +105,7 @@
 			children = (
 				C59FD5522845FEED00DD72AE /* AppDelegate.swift */,
 				C59FD5542845FEED00DD72AE /* SceneDelegate.swift */,
-				C59FD5562845FEED00DD72AE /* HomeViewController.swift */,
-				C59FD582284602F900DD72AE /* PersonDetailViewController.swift */,
-				C59FD5842846036B00DD72AE /* HomeTableViewCell.swift */,
+				C59FD5872846050E00DD72AE /* View */,
 				C59FD5582845FEED00DD72AE /* Main.storyboard */,
 				C59FD55B2845FEF400DD72AE /* Assets.xcassets */,
 				C59FD55D2845FEF400DD72AE /* LaunchScreen.storyboard */,
@@ -131,6 +129,32 @@
 				C59FD5752845FEF500DD72AE /* BirthDatesUITestsLaunchTests.swift */,
 			);
 			path = BirthDatesUITests;
+			sourceTree = "<group>";
+		};
+		C59FD5872846050E00DD72AE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C59FD5882846053400DD72AE /* ViewControllers */,
+				C59FD5892846053F00DD72AE /* Cells */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C59FD5882846053400DD72AE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C59FD5562845FEED00DD72AE /* HomeViewController.swift */,
+				C59FD582284602F900DD72AE /* PersonDetailViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C59FD5892846053F00DD72AE /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C59FD5842846036B00DD72AE /* HomeTableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

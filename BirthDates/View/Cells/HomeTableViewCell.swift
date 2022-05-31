@@ -8,6 +8,11 @@
 import UIKit
 
 class HomeTableViewCell: UITableViewCell {
+    
+    @IBOutlet weak var profileView: UIView!
+    @IBOutlet weak var lbFirstLetter: UILabel!
+    @IBOutlet weak var lbNames: UILabel!
+    @IBOutlet weak var lbDOB: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()

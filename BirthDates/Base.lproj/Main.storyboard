@@ -77,6 +77,12 @@
                                                 <constraint firstAttribute="bottom" secondItem="PhT-2y-l7J" secondAttribute="bottom" id="fuy-db-oRb"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="lbDOB" destination="kwr-lP-zF2" id="sRL-8m-CnV"/>
+                                            <outlet property="lbFirstLetter" destination="IvX-2b-OKk" id="8cZ-BK-0BU"/>
+                                            <outlet property="lbNames" destination="ug7-iF-seM" id="LQb-oN-kTa"/>
+                                            <outlet property="profileView" destination="Yny-9Z-8ek" id="GQq-Nz-aHV"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -96,6 +102,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Birthdays" id="kb4-Vq-wmR"/>
+                    <connections>
+                        <outlet property="activityIndic" destination="uII-UU-bot" id="vab-zi-RVO"/>
+                        <outlet property="bdayListView" destination="diQ-4Q-dVC" id="4Le-r2-Nen"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -165,6 +175,9 @@
                                     </attributedString>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="goBackBtn:" destination="lAW-bg-zuP" eventType="touchUpInside" id="kit-86-73k"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Hbe-ps-2LD"/>
@@ -180,6 +193,13 @@
                             <constraint firstItem="emf-Q6-AsE" firstAttribute="centerY" secondItem="gU0-xp-eOA" secondAttribute="centerY" id="ytD-qF-jEb"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="goBackBtn" destination="iy8-gJ-RqS" id="y0s-0Z-3Jn"/>
+                        <outlet property="initialsView" destination="118-i7-vMr" id="EnM-mh-t7v"/>
+                        <outlet property="lbDob" destination="iu9-ja-PtW" id="Ion-b1-nuA"/>
+                        <outlet property="lbInitials" destination="dhK-KX-ds3" id="g6R-Rt-Dya"/>
+                        <outlet property="lbName" destination="bZp-nA-EjP" id="PbT-Yw-H48"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XqG-f2-xHQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
