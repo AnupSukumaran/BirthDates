@@ -15,6 +15,7 @@ Clone the repo using the "git clone https://github.com/AnupSukumaran/BirthDates.
 
 - Impoved the UI a Bit more. 
 - Added network connection checker
+- Have added app icons.
 
 ## Contact details and public profiles.
 
