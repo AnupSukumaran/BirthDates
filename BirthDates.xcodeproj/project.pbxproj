@@ -26,6 +26,7 @@
 		C59FD59B28460AB700DD72AE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59FD59A28460AB700DD72AE /* Constants.swift */; };
 		C59FD59D28460D0800DD72AE /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59FD59C28460D0800DD72AE /* HomeViewModel.swift */; };
 		C59FD5A02846109F00DD72AE /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59FD59F2846109F00DD72AE /* String+Ext.swift */; };
+		C59FD5A3284615D900DD72AE /* UIStoryboard+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59FD5A2284615D900DD72AE /* UIStoryboard+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		C59FD59A28460AB700DD72AE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C59FD59C28460D0800DD72AE /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		C59FD59F2846109F00DD72AE /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		C59FD5A2284615D900DD72AE /* UIStoryboard+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				C59FD59F2846109F00DD72AE /* String+Ext.swift */,
+				C59FD5A2284615D900DD72AE /* UIStoryboard+Ext.swift */,
 			);
 			path = Exts;
 			sourceTree = "<group>";
@@ -376,6 +379,7 @@
 				C59FD583284602F900DD72AE /* PersonDetailViewController.swift in Sources */,
 				C59FD59D28460D0800DD72AE /* HomeViewModel.swift in Sources */,
 				C59FD5852846036B00DD72AE /* HomeTableViewCell.swift in Sources */,
+				C59FD5A3284615D900DD72AE /* UIStoryboard+Ext.swift in Sources */,
 				C59FD5572845FEED00DD72AE /* HomeViewController.swift in Sources */,
 				C59FD5532845FEED00DD72AE /* AppDelegate.swift in Sources */,
 				C59FD5922846084700DD72AE /* NetworkLib.swift in Sources */,
