@@ -20,6 +20,8 @@
 		C59FD5852846036B00DD72AE /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59FD5842846036B00DD72AE /* HomeTableViewCell.swift */; };
 		C59FD58C2846062700DD72AE /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = C59FD58B2846062700DD72AE /* Apollo */; };
 		C59FD590284607C600DD72AE /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = C59FD58F284607C600DD72AE /* schema.json */; };
+		C59FD5922846084700DD72AE /* NetworkLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59FD5912846084700DD72AE /* NetworkLib.swift */; };
+		C59FD5942846087300DD72AE /* Queries.graphql in Resources */ = {isa = PBXBuildFile; fileRef = C59FD5932846087300DD72AE /* Queries.graphql */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 		C59FD582284602F900DD72AE /* PersonDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailViewController.swift; sourceTree = "<group>"; };
 		C59FD5842846036B00DD72AE /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		C59FD58F284607C600DD72AE /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
+		C59FD5912846084700DD72AE /* NetworkLib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLib.swift; sourceTree = "<group>"; };
+		C59FD5932846087300DD72AE /* Queries.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = Queries.graphql; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,7 @@
 				C59FD55B2845FEF400DD72AE /* Assets.xcassets */,
 				C59FD55D2845FEF400DD72AE /* LaunchScreen.storyboard */,
 				C59FD5602845FEF400DD72AE /* Info.plist */,
+				C59FD5952846087B00DD72AE /* APICalls&GraphQLFiles */,
 			);
 			path = BirthDates;
 			sourceTree = "<group>";
@@ -160,6 +165,15 @@
 				C59FD5842846036B00DD72AE /* HomeTableViewCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		C59FD5952846087B00DD72AE /* APICalls&GraphQLFiles */ = {
+			isa = PBXGroup;
+			children = (
+				C59FD5912846084700DD72AE /* NetworkLib.swift */,
+				C59FD5932846087300DD72AE /* Queries.graphql */,
+			);
+			path = "APICalls&GraphQLFiles";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C59FD590284607C600DD72AE /* schema.json in Resources */,
+				C59FD5942846087300DD72AE /* Queries.graphql in Resources */,
 				C59FD55F2845FEF400DD72AE /* LaunchScreen.storyboard in Resources */,
 				C59FD55C2845FEF400DD72AE /* Assets.xcassets in Resources */,
 				C59FD55A2845FEED00DD72AE /* Main.storyboard in Resources */,
@@ -304,6 +319,7 @@
 				C59FD5852846036B00DD72AE /* HomeTableViewCell.swift in Sources */,
 				C59FD5572845FEED00DD72AE /* HomeViewController.swift in Sources */,
 				C59FD5532845FEED00DD72AE /* AppDelegate.swift in Sources */,
+				C59FD5922846084700DD72AE /* NetworkLib.swift in Sources */,
 				C59FD5552845FEED00DD72AE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

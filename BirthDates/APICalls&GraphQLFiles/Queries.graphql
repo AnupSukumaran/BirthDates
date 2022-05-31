@@ -1,0 +1,8 @@
+query Birthdays{
+  person {
+	id
+	name
+	date_of_birth
+  }
+}
+
