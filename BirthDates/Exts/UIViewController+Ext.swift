@@ -19,6 +19,7 @@ extension UIViewController {
     //MARK:
     func showPersonDetailViewController(personDetail: BirthdaysQuery.Data.Person?) {
         guard let vc = UIStoryboard.personDetailViewController() else {return}
+        vc.viewModel = PersonDetailViewModel(personDetail: personDetail)
         navPush(vc)
     }
     
