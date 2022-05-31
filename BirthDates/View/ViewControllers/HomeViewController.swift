@@ -22,6 +22,8 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         bdayListView.delegate = viewModel
         bdayListView.dataSource = viewModel
+        activityStartAction(true)
+        viewModel?.callBirthdaysAPI()
     }
 
 
@@ -33,12 +35,26 @@ extension HomeViewController {
         
         viewModel?.tableReloadHandler = { [weak self] in
             guard let vc = self else {return}
+            vc.activityStartAction(false)
             vc.bdayListView.reloadData()
         }
         
         viewModel?.errorHandler = { [weak self] errStr in
-//            guard let vc = self else {return}
+            guard let vc = self else {return}
+            vc.activityStartAction(false)
         }
+    }
+    
+    func activityStartAction(_ begin: Bool) {
+        self.view.isUserInteractionEnabled = !begin
+        self.view.alpha = begin ? 0.5 : 1
+        
+        guard begin else {
+            activityIndic.stopAnimating()
+            return
+            
+        }
+        activityIndic.startAnimating()
     }
     
 }
