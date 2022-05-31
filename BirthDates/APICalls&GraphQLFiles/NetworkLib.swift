@@ -15,10 +15,15 @@ enum Results<T> {
 
 class NetworkLib {
     static let shared = NetworkLib()
-    lazy var apollo = ApolloClient(url: URL(string: "https://birthday-api.hasura.app/v1/graphql")!)
+    var apollo: ApolloClient?
+    
+    init() {
+        guard let url = URL(string: .mainUrlString) else {return}
+        apollo = ApolloClient(url: url)
+    }
     
     func callBirthdaysAPI(comp: @escaping (Results<[BirthdaysQuery.Data.Person]>) -> Void) {
-        apollo.fetch(query: BirthdaysQuery()) { result in
+        apollo?.fetch(query: BirthdaysQuery()) { result in
             switch result {
             case .success(let graphQLResult):
                 comp(.success(graphQLResult.data?.person ?? []))

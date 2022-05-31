@@ -23,6 +23,7 @@
 		C59FD5922846084700DD72AE /* NetworkLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59FD5912846084700DD72AE /* NetworkLib.swift */; };
 		C59FD5942846087300DD72AE /* Queries.graphql in Resources */ = {isa = PBXBuildFile; fileRef = C59FD5932846087300DD72AE /* Queries.graphql */; };
 		C59FD5982846097C00DD72AE /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59FD5972846097C00DD72AE /* API.swift */; };
+		C59FD59B28460AB700DD72AE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59FD59A28460AB700DD72AE /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		C59FD5912846084700DD72AE /* NetworkLib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLib.swift; sourceTree = "<group>"; };
 		C59FD5932846087300DD72AE /* Queries.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = Queries.graphql; sourceTree = "<group>"; };
 		C59FD5972846097C00DD72AE /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		C59FD59A28460AB700DD72AE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 				C59FD5522845FEED00DD72AE /* AppDelegate.swift */,
 				C59FD5542845FEED00DD72AE /* SceneDelegate.swift */,
 				C59FD58F284607C600DD72AE /* schema.json */,
+				C59FD59A28460AB700DD72AE /* Constants.swift */,
 				C59FD5992846098700DD72AE /* Model */,
 				C59FD5872846050E00DD72AE /* View */,
 				C59FD5582845FEED00DD72AE /* Main.storyboard */,
@@ -355,6 +358,7 @@
 				C59FD5922846084700DD72AE /* NetworkLib.swift in Sources */,
 				C59FD5552845FEED00DD72AE /* SceneDelegate.swift in Sources */,
 				C59FD5982846097C00DD72AE /* API.swift in Sources */,
+				C59FD59B28460AB700DD72AE /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
