@@ -6,13 +6,17 @@
 //
 
 import XCTest
+import Apollo
 @testable import BirthDates
 
 class NetworkAPITests: XCTestCase {
 
     var sut: NetworkLib!
+    let networkMonitor = NetworkMonitor.shared
+    var apollo: ApolloClient?
     override func setUpWithError() throws {
-        sut = NetworkLib()
+        let urlString = "https://birthday-api.hasura.app/v1/graphql"
+        sut = NetworkLib(urlStr: urlString)
     }
 
     override func tearDownWithError() throws {
@@ -20,16 +24,19 @@ class NetworkAPITests: XCTestCase {
     }
 
     func testCallBirthdaysAPI() throws {
-        let expect = XCTestExpectation(description: "callback")
+        try XCTSkipUnless(
+          networkMonitor.isReachable,
+          "Network connectivity needed for this test.")
+        let promise = expectation(description: "Completion handler invoked")
         sut.callBirthdaysAPI { result in
-            expect.fulfill()
             switch result {
-            case .success(let personArr):
-                XCTAssertNotNil(personArr)
+            case .success(let data):
+                XCTAssertNotNil(data)
+                promise.fulfill()
             case .failure(errorStr: let err, _):
-                XCTFail(err)
+                XCTFail("Error: \(err)")
             }
         }
-        wait(for: [expect], timeout: 3.1)
+        wait(for: [promise], timeout: 5)
     }
 }

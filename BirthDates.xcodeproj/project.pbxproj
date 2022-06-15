@@ -31,6 +31,7 @@
 		C59FD5A7284616F600DD72AE /* PersonDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59FD5A6284616F600DD72AE /* PersonDetailViewModel.swift */; };
 		C59FD5A928461ABE00DD72AE /* NetworkAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59FD5A828461ABE00DD72AE /* NetworkAPITests.swift */; };
 		C59FD5AC2846215800DD72AE /* SASCustomAlert in Frameworks */ = {isa = PBXBuildFile; productRef = C59FD5AB2846215800DD72AE /* SASCustomAlert */; };
+		C5B40168285A480E0093654E /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B40167285A480E0093654E /* NetworkMonitor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		C59FD5A42846165E00DD72AE /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
 		C59FD5A6284616F600DD72AE /* PersonDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailViewModel.swift; sourceTree = "<group>"; };
 		C59FD5A828461ABE00DD72AE /* NetworkAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAPITests.swift; sourceTree = "<group>"; };
+		C5B40167285A480E0093654E /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 				C59FD5542845FEED00DD72AE /* SceneDelegate.swift */,
 				C59FD58F284607C600DD72AE /* schema.json */,
 				C59FD59A28460AB700DD72AE /* Constants.swift */,
+				C5B40167285A480E0093654E /* NetworkMonitor.swift */,
 				C59FD5A1284610D300DD72AE /* Exts */,
 				C59FD5952846087B00DD72AE /* APICalls&GraphQLFiles */,
 				C59FD5992846098700DD72AE /* Model */,
@@ -421,6 +424,7 @@
 				C59FD5A02846109F00DD72AE /* String+Ext.swift in Sources */,
 				C59FD59B28460AB700DD72AE /* Constants.swift in Sources */,
 				C59FD5A7284616F600DD72AE /* PersonDetailViewModel.swift in Sources */,
+				C5B40168285A480E0093654E /* NetworkMonitor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
